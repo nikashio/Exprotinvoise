@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="devall_email_with_pdf" label="Devall email with pdf" file="email_with_pdf.html" type="html" module="DevAll_ExportInvoices" area="frontend"/>
+</config>

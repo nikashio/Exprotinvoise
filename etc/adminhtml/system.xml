@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="devall" sortOrder="999" translate="label">
+            <label>DevAll</label>
+        </tab>
+        <section id="invoice_export_pdf" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label">
+            <label>Export invoice PDF</label>
+            <tab>devall</tab>
+            <resource>DevAll_ExportInvoices::config_devall_export</resource>
+            <group id="invoice" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Invoice PDF</label>
+                <field id="send_to" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Destination Email for monthly export archive</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
